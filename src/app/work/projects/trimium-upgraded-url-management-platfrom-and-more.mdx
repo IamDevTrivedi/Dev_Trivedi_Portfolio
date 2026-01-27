@@ -1,0 +1,127 @@
+---
+title: "Trimium-workspace-based-URL-shorter-and-more"
+publishedAt: "2026-01-28"
+summary: "Developer a Complete URL management platform allowing users to create & manage workspaces in teams, creating custom short links, QR codes, analytics , LinkHub for managing multiple links and more."
+images:
+  - "/images/myImages/projects/trimium/cover-01.png"
+  - "/images/myImages/projects/trimium/cover-02.png"
+  - "/images/myImages/projects/trimium/cover-03.png"
+  - "/images/myImages/projects/trimium/cover-04.png"
+  - "/images/myImages/projects/trimium/cover-05.png"
+team:
+  - name: "Dev Trivedi"
+    role: "Full Stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/contact-devtrivedi/"
+link: "https://trimium.vercel.app/"
+---
+
+# Trimium: URL Management Platform
+
+## Overview
+
+Trimium is a comprehensive URL management platform designed to help users create, manage, and analyze shortened URLs within collaborative workspaces. The platform offers a range of features including custom short links, QR code generation, detailed analytics, and a LinkHub (link-in-bio page) for managing multiple links. Trimium is built to facilitate teamwork and streamline URL management for individuals and organizations alike.
+
+---
+
+## Key Features
+
+### Workspace Management
+
+- Create and manage multiple workspaces for different teams or projects
+- Invite team members with role-based access control: **Admin**, **Member**, **Viewer**
+- Access workspace performance analytics directly from the workspace dashboard
+
+### Custom URL Shortening
+
+- Generate custom short links with personalized aliases—create and edit anytime
+- Set short link properties such as:
+  - Scheduled lifespan
+  - Password protection
+  - Maximum traffic transfer limit
+- Bulk URL shortening for efficient management of multiple links
+- Edit destination URLs and link properties even after creation
+- Get detailed analytics for each short link, including:
+  - Total clicks
+  - Total unique clicks
+  - Device distribution
+  - Browser distribution
+  - Geographical distribution
+  - Referrers
+  - Click trends over time
+- QR code generation for each short link with customization options
+
+### Tags and Filters
+
+- Organize and categorize short links using tags
+- Filter and sort links based on tags, creation date, and performance metrics
+
+### LinkHub (Link in Bio)
+
+- Create a personalized LinkHub page to showcase multiple links
+- Customize the appearance of the LinkHub page with themes and layouts
+
+### QR Code Generator
+
+- Generate QR codes for short links with customization options like:
+  - Color
+  - Size
+  - Logo addition
+  - Margin adjustment
+  - Error correction levels
+- Download QR codes in various formats
+
+### Secure Authentication
+
+- Complete authentication flow including **Sign Up**, **Login**, **Password Reset**, and **Email Verification** using JWT and Argon2 for secure password hashing
+- User session management with remote logout capabilities, including logout from all devices
+- User account activity displays login activity with device type, browser, IP address, and location
+
+---
+
+## Technologies Used
+
+### Frontend
+
+- **Next.js** — Building the user interface and managing routing
+- **React.js** — Building interactive user interfaces
+- **Tailwind CSS** — Styling and responsive design
+- **Recharts** — Data visualization and analytics charts
+- **Shadcn UI** — Building accessible and customizable UI components
+- **react-hook-form** — Managing form state and validation
+- **Axios** — Making HTTP requests to the backend API
+- **qrcode** — Generating QR codes
+- **Zod** — Schema validation and type inference
+
+### Backend
+
+- **Node.js** — Building the server-side application
+- **Express.js** — Handling API routes and middleware
+- **MongoDB** — Data storage for users, workspaces, links, analytics, and more
+- **Redis** — Caching and real-time data processing
+- **BullMQ** — Managing job queues and background processing
+- **Zod** — Schema validation and type inference
+- **MaxMind GeoIP database** — Geolocation and IP address lookup
+
+### Dev Tools & Deployment
+
+- **TypeScript** — Static typing and improved code quality
+- **ESLint & Prettier** — Code linting and formatting
+- **Git & GitHub** — Version control and collaboration
+- Hot reloading enabled for both frontend and backend during development for faster iteration
+- **Vercel** — Frontend application deployment
+- **EC2** — Backend server hosting
+- **Render** — Alternative hosting for backend services
+
+---
+
+## Outcome
+
+Trimium successfully provides a robust platform for URL management, enabling users to efficiently create and manage shortened URLs within collaborative workspaces. The platform's comprehensive features—including custom short links, QR code generation, detailed analytics, and LinkHub functionality—have enhanced user experience and streamlined URL management processes. The implementation of secure authentication and role-based access control ensures data integrity and user privacy.
+
+---
+
+## Resources
+
+- **Live Platform:** [trimium.vercel.app](https://trimium.vercel.app/)
+- **GitHub Repository:** [github.com/IamDevTrivedi/Trimium](https://github.com/IamDevTrivedi/Trimium/)
