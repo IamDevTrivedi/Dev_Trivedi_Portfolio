@@ -72,7 +72,7 @@ const home = {
       Dev Trivedi transforms ideas into elegant, functional web experiences
       <br /> with a passion for clean code, cutting-edge technologies, and
       strong problem-solving skills — backed by{" "}
-      <strong>1600+ challenges solved</strong> on LeetCode & Codeforces.
+      <strong>2000+ challenges solved</strong> on LeetCode & Codeforces.
     </>
   ),
 };
