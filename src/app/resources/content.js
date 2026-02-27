@@ -193,7 +193,7 @@ const about = {
         ),
         images: [
           {
-            src: "/images/myImages/projects/talkasauras/cover-03.png",
+            src: "/images/myImages/projects/talkasauras/cover-02.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -205,13 +205,13 @@ const about = {
             height: 9,
           },
           {
-            src: "/images/myImages/projects/linkwith/cover-03.png",
+            src: "/images/myImages/projects/trimium/cover-01.png",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/myImages/projects/project-ashwatthama/cover-01.png",
+            src: "/images/myImages/projects/linkwith/cover-01.png",
             alt: "Project image",
             width: 16,
             height: 9,

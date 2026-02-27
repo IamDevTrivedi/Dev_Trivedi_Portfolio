@@ -1,14 +1,11 @@
 ---
-title: "Talkasaraus, Telegram AI Assistant Bot"
+title: "Talkasauras, Telegram AI Assistant Bot"
 publishedAt: "2025-05-07"
-summary: "Talkasaraus is a Telegram-based AI assistant bot powered by Gemini 2.0. It offers natural language interaction, context-aware responses, and useful utility commands for enhanced conversational support."
+summary: "Talkasauras is an AI-powered Telegram bot that brings intelligent conversational capabilities directly to your messaging platform."
 images:
   - "/images/myImages/projects/talkasauras/cover-01.png"
   - "/images/myImages/projects/talkasauras/cover-02.png"
   - "/images/myImages/projects/talkasauras/cover-03.png"
-  - "/images/myImages/projects/talkasauras/cover-04.png"
-  - "/images/myImages/projects/talkasauras/cover-05.png"
-  - "/images/myImages/projects/talkasauras/cover-06.png"
 team:
   - name: "Dev Trivedi"
     role: "Bot Developer"
@@ -17,52 +14,105 @@ team:
 link: "https://t.me/talkasauras_bot"
 ---
 
+# Building Talkasauras: A AI Telegram Bot
+
 ## Overview
 
-Talkasaraus is a friendly, general-purpose AI assistant built as a Telegram bot. Powered by Google's Gemini 2.0 and managed by Vercel AI-SDK, it understands and responds to users in natural language. It supports persistent conversation history, intelligent follow-ups, and a suite of utility commands designed for seamless user interaction.
+Talkasauras is an AI-powered Telegram bot that brings intelligent conversational capabilities directly to your messaging platform. What started as an exploration into building Telegram bots evolved into a full-featured application with advanced AI integration, natural language processing for reminders, and a comprehensive admin dashboard.
+
+The project demonstrates how modern containerization, caching strategies, and self-hosted AI models can come together to create a responsive, privacy-focused conversational assistant. Unlike cloud-based AI services, Talkasauras runs entirely on your own infrastructure using Ollama, giving you complete control over your data and conversations.
+
+**Live Bot**: Try it at [@talkasauras_bot](https://t.me/talkasauras_bot)
+
+**QR Code**: Scan the QR code below to start chatting with Talkasauras on Telegram!
+
+<div align="center">
+  <img
+    src="/images/myImages/projects/talkasauras/qr.png"
+    alt="Talkasauras QR Code"
+    width="200"
+    height="200"
+  />
+</div>
 
 ## Key Features
 
-- **Natural Language AI**: Conversational capabilities backed by Gemini 2.0 for smooth, human-like dialogue.
-- **Persistent Chat History**: Stores user interaction history in MongoDB for context-aware conversations.
-- **Secure Data Storage**: Messages are stored securely in the database with crypto encryption.
-- **Utility Commands**:
-  - `/start`: Initialize and start interacting with the bot
-  - `/remindme`: A NLP reminder system that will remind you with a message at the mentioned time, made using chrono-node
-  - `/imagine`: Generate visuals and dynamic outputs with user prompts within few seconds using Google Gemini 2 Flash experiment model and Vercel AI-SDK
-  - `/temporary_start`: Initiate a temporary chat session
-  - `/temporary_end`: End the temporary session that automatically closes after 5 minutes of inactivity
-  - `/current_mode`: Show current mode of operation
-  - `/clear`: Clear your conversation history
-  - `/help`: Display help documentation
-  - `/feedback`: Submit feedback to the developer
-  - `/contact`: Get in touch with the developer
-  - `/about`: View bot information
-- **Admin Only Commands**:
-  - `/sendUpdateToAllUsers`: Only authorised admins can send the announcement messages to all the users of this bot
+### Intelligent Conversations
 
+- **Multi-modal AI Interactions**: Engage in text-to-text conversations or upload images for AI-powered analysis and descriptions
+- **Contextual Memory**: The bot maintains conversation context across multiple messages, enabling natural, flowing dialogues
+- **Temporary Chat Mode**: Switch to a temporary conversation mode that automatically expires after 5 minutes of inactivity—perfect for quick queries without cluttering your main chat history
+
+### Personalization
+
+- **Multiple Writing Styles**: Choose from Default, Formal, Descriptive, or Concise styles to match your communication preferences
+- **Custom Instructions**: Define personalized instructions that shape how the bot responds to you, creating a truly customized experience
+
+### Smart Reminders
+
+One of the standout features is the natural language reminder system. Simply tell the bot "Remind me to call John on March 7, 2026 at 2:48 PM" and it will parse the request, schedule the reminder, and notify you at the exact time—all powered by background job processing with BullMQ.
+
+### Admin Capabilities
+
+- **Broadcast System**: Send announcements and updates to all users directly from the admin bot
+- **Real-time Metrics**: Some basic analytics on user interactions & system status.
 
 ## Technologies Used
 
-- **Telegram Bot API**: For building conversational bot interactions.
-- **Telegraf.js**: Framework for managing the Telegram bot.
-- **Gemini 2.0 API**: Google's advanced AI model for NLP and response generation.
-- **Vercel AI-SDK**: For integrating Gemini 2.0 and managing AI interactions.
-- **Crypto**: For encrypting sensitive data before storage.
-- **MongoDB**: Database for persisting user messages and session history.
-- **Chrono-node**: For natural language processing of time-related commands in reminders.
-- **Cron-job**: For scheduling tasks and reminders.
-- **Node.js**: Runtime environment for building the backend logic.
+### Backend Infrastructure
 
-## Challenges and Learnings
+- **Node.js + TypeScript**: Type-safe development with modern JavaScript runtime
+- **PostgreSQL**: Robust relational database for user data and conversation history
+- **Prisma ORM**: Type-safe database client with excellent TypeScript integration
+- **Redis**: High-performance caching layer for rapid response times
+- **BullMQ**: Reliable background job processing for reminders and asynchronous tasks
 
-Maintaining coherent follow-up responses across sessions required a persistent, efficient state management system. Implementing flexible session modes and crafting an intuitive command structure helped improve usability. Working with Gemini's API for conversational context highlighted the importance of prompt engineering and error handling in bot UX.
+### AI & Machine Learning
 
-## Outcome
+- **Ollama**: Self-hostable, platform-agnostic AI model inference engine
 
-Talkasaraus is now live and serves as a helpful, AI-powered assistant on Telegram. It offers natural interaction, remembers past conversations, and assists users across a range of casual and productive scenarios.
+### DevOps & Deployment
 
-### Resources
+- **Docker & Docker Compose**: Full containerization for consistent development and production environments
+  - Development: 5 containers (app, database, cache, AI, cache UI - Redis Commander)
+  - Production: 5 containers (app , database, cache, cache UI- Redis Commander, reverse proxy - Nginx)
+- **Nginx**: Reverse proxy for simplified single-port deployment
+- **ESLint & Prettier**: Code quality and consistent formatting
 
-- [Talkasaraus](https://t.me/talkasauras_bot)
-- [Talkasaraus GitHub](https://github.com/IamDevTrivedi/Talkasauras_Bot/)
+### Bot Framework
+
+- **Telegraf module**: Native integration with Telegram's messaging platform
+
+## Learnings and Outcomes
+
+### Technical Insights
+
+**1. Use open-sourced AI models without expensive cloud API calls**
+Running Ollama locally proved that you don't need expensive cloud API calls to deliver quality AI experiences. Self-hosting gave me full control over the model without vendor lock-in, data privacy concerns or rate limits.
+
+**2. Caching is Critical**
+Implementing Redis dramatically improved response times. For repeated queries or context retrieval, the speed difference between cached and uncached operations was game-changing.
+
+**3. Background Jobs Need Careful Design**
+BullMQ for reminder scheduling taught me the importance of job reliability, retry logic, and graceful failure handling. Reminders need to be accurate—there's no room for "it mostly works."
+
+**4. Container Orchestration Simplifies Deployment**
+Docker Compose transformed a complex multi-service application into a simple `docker-compose up` command. The consistency between development and production environments eliminated inconsistent bugs and deployment headaches.
+
+### Architecture Decisions
+
+**Why Ollama over OpenAI/Claude APIs?**
+
+- **Vender lock-in avoidance**: No dependency on proprietary APIs or vendor-specific features, For example, If my AI responses depends on a specific OpenAI feature that gets deprecated, my bot would break. With Ollama, I have full control over the model and can switch to a different one if needed without changing my code.
+
+### Outcomes
+
+- **Fully functional production bot** serving real users on Telegram.
+- **Sub-second response times** for most queries through Redis caching.
+- **Reliable reminder system** with 99%+ delivery accuracy.
+- **Modular architecture** enabling easy feature additions and maintenance.
+
+## Resources
+
+- **Try the Bot**: [Talkasauras on Telegram](https://t.me/talkasauras_bot)
+- **Source Code**: [GitHub Repository](https://github.com/IamDevTrivedi/Talkasauras_Bot/)
