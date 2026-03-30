@@ -55,8 +55,8 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name} Portfolio | ${person.role}`,
-  description: `Dev Trivedi portfolio featuring full stack projects, technical achievements, and resume highlights.`,
+  title: `${person.name} | Full Stack Developer Portfolio`,
+  description: `Explore my portfolio and resume featuring full stack projects, real-time systems, and 2000+ coding challenges solved.`,
   keywords: [
     "Dev Trivedi portfolio",
     "Dev Trivedi resume",
@@ -64,7 +64,7 @@ const home = {
     "Next.js developer portfolio",
     "React Node.js portfolio",
   ],
-  headline: <>Bridging innovation and functionality through code</>,
+  headline: <>I build scalable,<br/> real-time web products from idea to production</>,
   featured: {
     display: true,
     title: (
@@ -76,10 +76,11 @@ const home = {
   },
   subline: (
     <>
-      Dev Trivedi transforms ideas into elegant, functional web experiences
-      <br /> with a passion for clean code, cutting-edge technologies, and
-      strong problem-solving skills — backed by{" "}
-      <strong>2000+ challenges solved</strong> on LeetCode & Codeforces.
+      I build user-focused full-stack applications with React, Next.js,
+      Node.js, and modern AI tooling.
+      <br /> My approach combines clean architecture and practical problem
+      solving — backed by <strong>2000+ coding challenges solved</strong> on
+      LeetCode and Codeforces.
     </>
   ),
 };
@@ -87,8 +88,8 @@ const home = {
 const about = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: `About ${person.name} | Full Stack Developer`,
+  description: `I am ${person.name}, a ${person.role} specializing in real-time collaborative web apps and scalable backend systems.`,
   tableOfContent: {
     display: true,
     subItems: true,
@@ -102,15 +103,16 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "About Me",
     description: (
       <>
-        Dev is a software developer with understanding in building real-time
-        collaborative platforms and intuitive web applications. His work
+        I am a software developer with expertise in building real-time
+        collaborative platforms and intuitive web applications. My work
         combines technical innovation with user-focused design to create
         seamless digital experiences that solve practical problems. With over
-        1600+ problems solved on LeetCode and Codeforces, he brings strong
-        algorithmic thinking and deep problem-solving skills to every project.
+        2000+ coding challenges solved on LeetCode and Codeforces, I bring
+        strong algorithmic thinking and deep problem-solving skills to every
+        project.
       </>
     ),
   },
@@ -162,14 +164,14 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
         name: "Dhirubhai Ambani University",
         description: (
           <>
             B.Tech in Information & Communication Technology with
-            <strong> 8.72/10 GPA</strong>.
+            <strong> 8.58/10 GPA</strong>.
           </>
         ),
       },
@@ -187,15 +189,15 @@ const about = {
 
   technical: {
     display: true, // set to false to hide this section
-    title: "Skills & Expertise",
+    title: "Technical Skills",
     skills: [
       {
         title: "Full Stack Development",
         description: (
           <>
-            Proficient in <strong>React</strong>, <strong>Node.js</strong>,
-            MongoDB, and <strong>Socket.IO</strong> for building modern web
-            applications and real-time collaborative tools.
+            I build modern web applications and real-time collaborative tools
+            using <strong>React</strong>, <strong>Node.js</strong>, MongoDB,
+            and <strong>Socket.IO</strong>.
           </>
         ),
         images: [
@@ -229,10 +231,10 @@ const about = {
         title: "Problem Solving",
         description: (
           <>
-            LeetCode profile with <strong>1819 rating(max)</strong> and over{" "}
-            <strong>1150 problems</strong> solved, showcasing strong algorithm
-            design and data structure skills. Solved over{" "}
-            <strong>1600+ problems</strong> across various platforms.
+            My LeetCode profile has an <strong>1819 peak rating</strong> and
+            over <strong>1600 problems</strong> solved, reflecting strong
+            algorithm and data structure skills. I have solved over{" "}
+            <strong>2000+ challenges</strong> across coding platforms.
             <ul style={{ marginTop: 10 }}>
               <li>
                 <SmartLink href="https://leetcode.com/u/MysteriousMortal/">
@@ -281,7 +283,7 @@ const blog = {
   path: "/blog",
   label: "Blog",
   title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  description: `Read what I have been building and learning recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
@@ -290,7 +292,7 @@ const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Explore full-stack projects I built, from real-time collaboration tools to AI-powered applications.`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
@@ -298,8 +300,8 @@ const work = {
 const resume = {
   path: "/resume",
   label: "Resume",
-  title: `${person.name} Resume | Full Stack Developer Portfolio`,
-  description: `Dev Trivedi resume with technical skills, project experience, coding achievements, and downloadable PDF.`,
+  title: `${person.name} Resume - Full Stack Developer`,
+  description: `Download my resume covering full-stack skills, project experience, and 2000+ coding challenges solved.`,
   keywords: [
     "Dev Trivedi resume",
     "Dev Trivedi CV",
@@ -313,7 +315,7 @@ const gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  description: `A photo collection of my projects, coding milestones, and personal highlights`,
   images: [
     {
       src: "/images/myImages/profiles/leetcode.png",
