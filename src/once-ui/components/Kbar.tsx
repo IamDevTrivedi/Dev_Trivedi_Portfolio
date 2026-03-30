@@ -413,9 +413,7 @@ export const Kbar: React.FC<KbarProps> = ({ items, children, ...rest }) => {
 
     // Close Kbar when pathname changes
     useEffect(() => {
-        if (isOpen) {
-            handleClose();
-        }
+        setIsOpen(false);
     }, [pathname]);
 
     // Add keyboard shortcut listener
