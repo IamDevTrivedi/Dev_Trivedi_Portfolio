@@ -16,18 +16,17 @@ The frontmatter is used to set the post's metadata: title, description, image, a
 <CodeBlock
     marginBottom="16"
     codeInstances={[
-      {
-        code:
-`---
+        {
+            code: `---
 title: "Arriving to a new milestone in my career"
 publishedAt: "2024-04-08"
 image: "/images/gallery/img-02.jpg"
 summary: "Every career is a journey, filled with challenges, growth, and those significant moments that mark a shift in our path."
 tag: "Journal"
 ---`,
-        language: "tsx",
-        label: "src/app/blog/posts/post-1.mdx"
-      }
+            language: "tsx",
+            label: "src/app/blog/posts/post-1.mdx",
+        },
     ]}
 />
 
@@ -43,9 +42,8 @@ You can use custom components in MDX files, but you need to import them first in
     marginBottom="16"
     highlight="11-12"
     codeInstances={[
-      {
-        code:
-`const components = {
+        {
+            code: `const components = {
     p: createParagraph as any,
     h1: createHeading(1) as any,
     h2: createHeading(2) as any,
@@ -58,9 +56,9 @@ You can use custom components in MDX files, but you need to import them first in
     Table,
     CodeBlock,
 };`,
-        language: "tsx",
-        label: "src/components/mdx.tsx"
-      }
+            language: "tsx",
+            label: "src/components/mdx.tsx",
+        },
     ]}
 />
 

@@ -1,9 +1,12 @@
 "use client";
 
-import React, {useState, useCallback, useEffect} from "react";
-import {Input, DropdownWrapper, Flex, DateRange, DateRangePicker, Row} from ".";
+import React, { useState, useCallback, useEffect } from "react";
+import { Input, DropdownWrapper, Flex, DateRange, DateRangePicker, Row } from ".";
 
-interface DateRangeInputProps extends Omit<React.ComponentProps<typeof Input>, "onChange" | "value" | "label"> {
+interface DateRangeInputProps extends Omit<
+    React.ComponentProps<typeof Input>,
+    "onChange" | "value" | "label"
+> {
     id: string;
     startLabel: string;
     endLabel: string;
@@ -32,19 +35,21 @@ const formatDateRange = (range: DateRange): LocalizedDateRange => {
 };
 
 export const DateRangeInput: React.FC<DateRangeInputProps> = ({
-                                                                  id,
-                                                                  startLabel = "Start",
-                                                                  endLabel = "End",
-                                                                  value,
-                                                                  onChange,
-                                                                  error,
-                                                                  minHeight,
-                                                                  className,
-                                                                  style,
-                                                                  ...rest
-                                                              }) => {
+    id,
+    startLabel = "Start",
+    endLabel = "End",
+    value,
+    onChange,
+    error,
+    minHeight,
+    className,
+    style,
+    ...rest
+}) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [inputValue, setInputValue] = useState(value ? formatDateRange(value) : {startDate: "", endDate: ""});
+    const [inputValue, setInputValue] = useState(
+        value ? formatDateRange(value) : { startDate: "", endDate: "" }
+    );
     useEffect(() => {
         if (value) {
             setInputValue(formatDateRange(value));
@@ -59,7 +64,7 @@ export const DateRangeInput: React.FC<DateRangeInputProps> = ({
                 setIsOpen(false);
             }
         },
-        [onChange],
+        [onChange]
     );
 
     const handleInputClick = useCallback(() => {
@@ -70,7 +75,6 @@ export const DateRangeInput: React.FC<DateRangeInputProps> = ({
         <Row fillWidth horizontal="center" gap="-1">
             <Input
                 className="cursor-interactive"
-
                 style={{
                     textOverflow: "ellipsis",
                 }}
@@ -81,7 +85,8 @@ export const DateRangeInput: React.FC<DateRangeInputProps> = ({
                 error={error}
                 readOnly
                 onClick={handleInputClick}
-                {...rest}/>
+                {...rest}
+            />
             <Input
                 className="cursor-interactive"
                 style={{
@@ -101,7 +106,7 @@ export const DateRangeInput: React.FC<DateRangeInputProps> = ({
 
     const dropdown = (
         <Flex padding="20" center={true}>
-            <DateRangePicker value={value} onChange={handleDateChange}/>
+            <DateRangePicker value={value} onChange={handleDateChange} />
         </Flex>
     );
 
@@ -114,10 +119,8 @@ export const DateRangeInput: React.FC<DateRangeInputProps> = ({
             isOpen={isOpen}
             closeAfterClick={false}
             className={className}
-            style={{...style}}
-            onOpenChange={
-                setIsOpen
-            }
+            style={{ ...style }}
+            onOpenChange={setIsOpen}
         />
     );
 };

@@ -20,26 +20,29 @@ Social sharing images (open-graph and twitter) are automatically generated with 
 <Feedback
     icon
     marginBottom="16"
-    description={<>
-        Make sure you have updated the <InlineCode>content.js</InlineCode> file with your own information and the <InlineCode>baseURL</InlineCode> variable in the <InlineCode>config.js</InlineCode> file.
-    </>}
+    description={
+        <>
+            Make sure you have updated the <InlineCode>content.js</InlineCode> file with your own
+            information and the <InlineCode>baseURL</InlineCode> variable in the{" "}
+            <InlineCode>config.js</InlineCode> file.
+        </>
+    }
 />
 
 <CodeBlock
     marginBottom="16"
     highlight="4"
     codeInstances={[
-      {
-        code:
-`export async function generateMetadata() {
+        {
+            code: `export async function generateMetadata() {
   const title = home.title;
   const description = home.description;
   const ogImage = \`https://\${baseURL}/og?title=\${encodeURIComponent(title)}\`;
    ...
 };`,
-        language: "tsx",
-        label: "src/app/{page}/page.tsx"
-      }
+            language: "tsx",
+            label: "src/app/{page}/page.tsx",
+        },
     ]}
 />
 

@@ -6,7 +6,9 @@
 
 .toastWrapper {
     bottom: 0;
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+        transform 0.3s,
+        opacity 0.3s;
 }
 
 .toastAnimation {

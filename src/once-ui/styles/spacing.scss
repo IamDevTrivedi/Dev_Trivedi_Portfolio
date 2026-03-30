@@ -1,5 +1,5 @@
-  /****************************/
- /*           MARGIN         */
+/****************************/
+/*           MARGIN         */
 /****************************/
 
 /* EVEN */
@@ -645,10 +645,8 @@
     margin-bottom: var(--responsive-space-xl);
 }
 
-
-
-  /****************************/
- /*           PADDING        */
+/****************************/
+/*           PADDING        */
 /****************************/
 
 /* EVEN */
@@ -1069,7 +1067,6 @@
     padding-top: var(--responsive-space-xl);
 }
 
-
 /* RIGHT */
 .pr-0 {
     padding-right: var(--static-space-0);
@@ -1349,11 +1346,8 @@
     padding-left: var(--responsive-space-xl);
 }
 
-
-
-
-  /****************************/
- /*            GAP           */
+/****************************/
+/*            GAP           */
 /****************************/
 
 // Negative gap: collapse stacked borders
@@ -1361,7 +1355,7 @@
 .g-horizontal--1 > *:not(:first-child) {
     margin-left: -1px;
 }
-  
+
 .g-vertical--1 > *:not(:first-child) {
     margin-top: -1px;
 }

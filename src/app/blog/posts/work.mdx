@@ -16,9 +16,8 @@ The frontmatter is used to set the project's metadata: title, description, image
 <CodeBlock
     marginBottom="16"
     codeInstances={[
-      {
-        code:
-`---
+        {
+            code: `---
 title: "Developing a design system for indie creators"
 publishedAt: "2025-03-17"
 summary: "Once UI is a design system that empowers indie creators, small teams, and startups to build web applications."
@@ -32,9 +31,9 @@ team:
     linkedIn: "https://www.linkedin.com/company/once-ui/"
 link: "https://once-ui.com/"
 ---`,
-        language: "tsx",
-        label: "src/app/work/projects/project-1.mdx"
-      }
+            language: "tsx",
+            label: "src/app/work/projects/project-1.mdx",
+        },
     ]}
 />
 
@@ -50,9 +49,8 @@ You can use custom components in MDX files, but you need to import them first in
     marginBottom="16"
     highlight="11-12"
     codeInstances={[
-      {
-        code:
-`const components = {
+        {
+            code: `const components = {
     p: createParagraph as any,
     h1: createHeading(1) as any,
     h2: createHeading(2) as any,
@@ -65,9 +63,9 @@ You can use custom components in MDX files, but you need to import them first in
     Table,
     CodeBlock,
 };`,
-        language: "tsx",
-        label: "src/components/mdx.tsx"
-      }
+            language: "tsx",
+            label: "src/components/mdx.tsx",
+        },
     ]}
 />
 
