@@ -1,0 +1,84 @@
+Dev Trivedi
++91 8000051660 | devtrivedi.work@gmail.com | linkedin.com/in/contact-devtrivedi | github.com/IamDevTrivedi
+
+Education
+Dhirubhai Ambani University
+Information and Communication Technology
+• Coursework: OOP, Data Structures, Design and Analysis of Algorithms, DBMS
+
+Prime Science School
+Higher Secondary Education; Score: 82.15 %
+
+Gandhinagar, Gujarat
+Aug 2023 – Present
+
+Jamnagar, Gujarat
+June 2021 – June 2023
+
+Technical Skills
+Languages: TypeScript, JavaScript, C, C++, SQL
+Frontend: Next.js, React.js, Tailwind CSS, Shadcn UI, HTML, CSS
+Backend: Node.js, Express.js, REST APIs, Socket.IO, BullMQ
+Databases and ORM: PostgreSQL, MongoDB, Redis, Prisma, Mongoose
+Tools: Git, GitHub, Postman, Docker, Nginx, PM2, Linux
+Cloud/Deployment: AWS EC2, AWS S3, Vercel, Render, CI/CD
+AI Integration: Ollama, Hugging Face, Vercel-AI SDK
+
+Projects
+Trimium | Link Management and Analytics Platform
+Dec 2025 – Jan 2026
+Next.js, Express, MongoDB, Redis, TypeScript, AWS
+GitHub Repository
+• Smart URL Management: Developed custom alias creation, bulk shortening of up to 500 URLs per batch,
+password protection, and scheduled link activation with integrated countdown timers.
+• Advanced Analytics and Visualization: Built tracking across 7+ analytics dimensions including clicks, unique
+visitors, geographic distribution, browser/OS statistics and referrer sources with CSV export
+• Team Collaboration: Architected a multi-workspace system featuring Role-Based Access Control
+(Admin/Member/Viewer), shared analytics, and tag-based organization.
+• Link Hub: Created an all-in-one personal link-in-bio tool featuring diverse themes and customization options.
+• Session based Authentication: Integrated email-verified registration, password resets, profile management, and
+session monitoring with remote logout functionality.
+• Security: Developed a hybrid rate-limiting system that triggers stateless Proof-of-Work (PoW) challenges upon
+IP-limit exhaustion; eliminated false positives for shared-IP organizations while maintaining 100% API availability
+for legitimate users.
+• API Performance Optimization: Reduced API response times by approximately 70% by optimizing MongoDB
+queries, implementing strategic compound indexing, Redis caching layers, and BullMQ background workers.
+• CI/CD Infrastructure: Implemented automated deployment pipelines on AWS EC2 and Vercel triggered by
+changes in the main branch.
+Talkasauras | AI Powered Telegram Bot
+May 2025, Jan 2026 – Feb 2026
+Telegraf, PostgreSQL, Ollama, Hugging Face, Docker
+GitHub Repository
+• AI-Powered Telegram Bot: Developed a personalized Telegram bot leveraging Ollama for context-aware AI
+responses with customizable user instructions and adjustable writing styles, enabling natural language interactions
+tailored to individual preferences.
+• Containerized Deployment: Architected and deployed the application using Docker, orchestrating 6
+interconnected containers to ensure consistent, reproducible deployment workflows.
+• Intelligent Reminder System: Engineered an NLP-based reminder scheduler using Chrono-node for natural
+language parsing and BullMQ for reliable background job processing and queue management.
+• Dual-Mode Chat Sessions: Implemented flexible chat session handling with both persistent and ephemeral
+modes, incorporating AES-256 encryption at rest for secure database storage of user conversations.
+• Admin Dashboard Bot: Built an internal administrative bot interface for real-time system monitoring, analytics
+and bulk message broadcasting capabilities.
+
+Codewhisper | Real-Time Collaborative Code Editor
+Jan 2025 – Feb 2025
+React.js, Express, MongoDB, Socket.IO
+GitHub Repository
+• Real-Time Collaborative Coding: Engineered a multi-user coding platform with Socket.IO enabling
+simultaneous code editing across 10+ programming languages.
+• Intuitive Code Editor Interface: Developed a modern editor with syntax highlighting, multi-file project
+support, and streamlined navigation for enhanced developer experience.
+• AI-Powered Development Assistant: Integrated an intelligent chat assistant to provide coding support,
+reducing debugging time for users.
+• Secure Authentication System: Implemented JWT-based authentication with comprehensive security features
+including email verification and password reset functionality.
+• Recognition: College-wide Winter of Code 2025 Winner among 65+ participants.
+
+Achievements
+• 1st Prize winner in Winter of Code 7.0 at MSTC DAU amongst 65+ participants.
+• Completed over 1600+ problems on LeetCode (MysteriousMortal) achieving a peak rating of 1819.
+• Attained global rank 314 in CodeChef (devtrivedi03) Starters 169D.
+• Ranked 1309 globally in LeetCode Biweekly Contest 154 among 27K+ participants.
+
+

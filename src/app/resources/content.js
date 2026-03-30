@@ -47,7 +47,7 @@ const social = [
   {
     name: "Resume",
     icon: "download",
-    link: `${baseURL}/downloads/resume.pdf`,
+    link: "/resume",
   },
 ];
 
@@ -55,8 +55,15 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
+  title: `${person.name} Portfolio | ${person.role}`,
+  description: `Dev Trivedi portfolio featuring full stack projects, technical achievements, and resume highlights.`,
+  keywords: [
+    "Dev Trivedi portfolio",
+    "Dev Trivedi resume",
+    "Dev Trivedi full stack developer",
+    "Next.js developer portfolio",
+    "React Node.js portfolio",
+  ],
   headline: <>Bridging innovation and functionality through code</>,
   featured: {
     display: true,
@@ -288,6 +295,20 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
+const resume = {
+  path: "/resume",
+  label: "Resume",
+  title: `${person.name} Resume | Full Stack Developer Portfolio`,
+  description: `Dev Trivedi resume with technical skills, project experience, coding achievements, and downloadable PDF.`,
+  keywords: [
+    "Dev Trivedi resume",
+    "Dev Trivedi CV",
+    "Dev Trivedi full stack developer",
+    "Dev Trivedi portfolio",
+    "TypeScript React Node.js resume",
+  ],
+};
+
 const gallery = {
   path: "/gallery",
   label: "Gallery",
@@ -413,4 +434,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, resume, gallery };

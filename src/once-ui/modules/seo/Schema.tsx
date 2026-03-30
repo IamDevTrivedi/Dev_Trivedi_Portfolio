@@ -55,8 +55,10 @@ export function Schema({
     "@type": schemaType,
     url,
   };
-  
-  schema.sameAs = Object.values(social).filter(Boolean)
+
+  schema.sameAs = social
+    .map((item) => item.link)
+    .filter((link): link is string => typeof link === "string" && /^https?:\/\//.test(link));
 
   if (as === "website") {
     schema.name = title;
