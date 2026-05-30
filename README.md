@@ -6,7 +6,7 @@ I am Dev Trivedi, a passionate software developer and tech enthusiast. This repo
 
 ## Overview
 
-View the live portfolio at [https://www.dev-trivedi.me](https://dev-trivedi.me) and explore selected projects at [https://www.dev-trivedi.me/work](https://dev-trivedi.me/work).
+View the live portfolio at [https://www.trivedi.dev](https://trivedi.dev) and explore selected projects at [https://www.trivedi.dev/work](https://trivedi.dev/work).
 
 ## Projects
 
