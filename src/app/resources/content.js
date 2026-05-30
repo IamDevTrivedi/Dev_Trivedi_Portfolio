@@ -83,8 +83,8 @@ const home = {
     },
     subline: (
         <>
-            I&apos;m currently an <strong>Engineer Analyst Intern at Goldman Sachs</strong> in Bengaluru
-            — applying my problem-solving skills to financial technology.
+            I&apos;m currently an <strong>Engineer Analyst Intern at Goldman Sachs</strong> in
+            Bengaluru — applying my problem-solving skills to financial technology.
             <br /> I build user-focused full-stack applications with React, Next.js, Node.js, and
             modern AI tooling.
         </>
