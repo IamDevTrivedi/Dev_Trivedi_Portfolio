@@ -8,7 +8,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role: "Full Stack Developer",
+    role: "Engineer Analyst Intern at Goldman Sachs | Full Stack Developer",
     avatar: "/images/avatar.jpg",
     email: "devtrivedi.work@gmail.com",
     location: "Asia/kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -55,19 +55,21 @@ const home = {
     path: "/",
     image: "/images/og/home.jpg",
     label: "Home",
-    title: `${person.name} | Full Stack Developer Portfolio`,
+    title: `${person.name} | Engineer Analyst Intern at Goldman Sachs & Full Stack Developer`,
     description: `Explore my portfolio and resume featuring full stack projects, real-time systems, and 2000+ coding challenges solved.`,
     keywords: [
         "Dev Trivedi portfolio",
         "Dev Trivedi resume",
-        "Dev Trivedi full stack developer",
+        "Dev Trivedi Goldman Sachs",
+        "Dev Trivedi Engineer Analyst Intern",
+        "Goldman Sachs Engineer Analyst Intern Bengaluru",
         "Next.js developer portfolio",
         "React Node.js portfolio",
     ],
     headline: (
         <>
-            I build scalable,
-            <br /> real-time web products from idea to production
+            Engineer Analyst Intern at Goldman Sachs
+            <br /> building scalable web products
         </>
     ),
     featured: {
@@ -81,10 +83,10 @@ const home = {
     },
     subline: (
         <>
-            I build user-focused full-stack applications with React, Next.js, Node.js, and modern AI
-            tooling.
-            <br /> My approach combines clean architecture and practical problem solving — backed by{" "}
-            <strong>2000+ coding challenges solved</strong> on LeetCode and Codeforces.
+            I'm currently an <strong>Engineer Analyst Intern at Goldman Sachs</strong> in Bengaluru
+            — applying my problem-solving skills to financial technology.
+            <br /> I build user-focused full-stack applications with React, Next.js, Node.js, and
+            modern AI tooling.
         </>
     ),
 };
@@ -92,7 +94,7 @@ const home = {
 const about = {
     path: "/about",
     label: "About",
-    title: `About ${person.name} | Full Stack Developer`,
+    title: `About ${person.name} | Engineer Analyst Intern at Goldman Sachs`,
     description: `I am ${person.name}, a ${person.role} specializing in real-time collaborative web apps and scalable backend systems.`,
     tableOfContent: {
         display: true,
@@ -110,56 +112,25 @@ const about = {
         title: "About Me",
         description: (
             <>
-                I am a software developer with expertise in building real-time collaborative
-                platforms and intuitive web applications. My work combines technical innovation with
-                user-focused design to create seamless digital experiences that solve practical
-                problems. With over 2000+ coding challenges solved on LeetCode and Codeforces, I
-                bring strong algorithmic thinking and deep problem-solving skills to every project.
+                Currently an Engineer Analyst Intern at Goldman Sachs in Bengaluru, where I apply
+                strong algorithmic thinking and full-stack engineering to financial technology at
+                scale. I build real-time collaborative platforms and intuitive web applications,
+                combining technical innovation with user-focused design to deliver seamless,
+                practical digital experiences. With 2000+ coding challenges solved on LeetCode and
+                Codeforces, I bring deep problem-solving skills to every project – from hackathons
+                to enterprise systems.
             </>
         ),
     },
     work: {
-        display: false, // set to false to hide this section
+        display: true,
         title: "Work Experience",
         experiences: [
             {
-                company: "FLY",
-                timeframe: "2022 - Present",
-                role: "Senior Design Engineer",
-                achievements: [
-                    <>
-                        Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in
-                        user engagement and 30% faster load times.
-                    </>,
-                    <>
-                        Spearheaded the integration of AI tools into design workflows, enabling
-                        designers to iterate 50% faster.
-                    </>,
-                ],
-                images: [
-                    // optional: leave the array empty if you don't want to display images
-                    {
-                        src: "/images/projects/project-01/cover-01.jpg",
-                        alt: "Once UI Project",
-                        width: 16,
-                        height: 9,
-                    },
-                ],
-            },
-            {
-                company: "Creativ3",
-                timeframe: "2018 - 2022",
-                role: "Lead Designer",
-                achievements: [
-                    <>
-                        Developed a design system that unified the brand across multiple platforms,
-                        improving design consistency by 40%.
-                    </>,
-                    <>
-                        Led a cross-functional team to launch a new product line, contributing to a
-                        15% increase in overall company revenue.
-                    </>,
-                ],
+                company: "Goldman Sachs",
+                timeframe: "Summer 2026",
+                role: "Engineer Analyst Intern",
+                achievements: [],
                 images: [],
             },
         ],
@@ -301,13 +272,14 @@ const work = {
 const resume = {
     path: "/resume",
     label: "Resume",
-    title: `${person.name} Resume - Full Stack Developer`,
-    description: `Download my resume covering full-stack skills, project experience, and 2000+ coding challenges solved.`,
+    title: `${person.name} Resume - Engineer Analyst Intern at Goldman Sachs`,
+    description: `Download my resume covering full-stack skills, Goldman Sachs engineering experience, and 2000+ coding challenges solved.`,
     keywords: [
         "Dev Trivedi resume",
         "Dev Trivedi CV",
+        "Dev Trivedi Goldman Sachs",
         "Dev Trivedi full stack developer",
-        "Dev Trivedi portfolio",
+        "Goldman Sachs Engineer Analyst Intern",
         "TypeScript React Node.js resume",
     ],
 };

@@ -43,6 +43,10 @@ export default function ResumePage() {
                 name: "Dhirubhai Ambani University",
             },
         ],
+        worksFor: {
+            "@type": "Organization",
+            name: "Goldman Sachs",
+        },
         knowsAbout: [
             "TypeScript",
             "JavaScript",
@@ -86,10 +90,11 @@ export default function ResumePage() {
                     Dev Trivedi Resume
                 </Heading>
                 <Text variant="body-default-m" onBackground="neutral-weak" wrap="balance">
-                    I am Dev Trivedi, a full stack developer who enjoys turning ideas into reliable,
-                    user-focused products. In this resume, I share my technical skills, project
-                    experience, and key milestones that have shaped my journey across modern web
-                    development, backend systems, and problem solving.
+                    I am Dev Trivedi, an Engineer Analyst Intern at Goldman Sachs and a full stack
+                    developer who enjoys turning ideas into reliable, user-focused products. In this
+                    resume, I share my technical skills, project experience, and key milestones that
+                    have shaped my journey across modern web development, backend systems, and
+                    problem solving.
                 </Text>
             </Column>
 
