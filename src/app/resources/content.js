@@ -66,20 +66,15 @@ const home = {
         "Next.js developer portfolio",
         "React Node.js portfolio",
     ],
-    headline: (
-        <>
-            Engineer Analyst Intern at Goldman Sachs
-            <br /> building scalable web products
-        </>
-    ),
+    headline: "Backend Engineer \u0026 Full Stack Developer",
     featured: {
         display: true,
         title: (
             <>
-                Recent project: <strong className="ml-4">Talkasauras</strong>
+                Recent project: <strong className="ml-4">Trimium</strong>
             </>
         ),
-        href: "/work/talkasaraus-telegram-ai-assistant-bot",
+        href: "/work/trimium-upgraded-url-management-platfrom-and-more",
     },
     subline: (
         <>
