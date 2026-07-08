@@ -30,7 +30,7 @@ export default async function sitemap() {
         "/resume": 0.95,
         "/work": 0.9,
         "/about": 0.8,
-        "/gallery": 0.7,
+
         "/blog": 0.6,
     };
 
