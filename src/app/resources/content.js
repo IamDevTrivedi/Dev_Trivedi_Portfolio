@@ -8,7 +8,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role: "Full Stack Developer",
+    role: "Engineer Analyst Intern at Goldman Sachs | Full Stack Developer",
     avatar: "/images/avatar.jpg",
     email: "devtrivedi.work@gmail.com",
     location: "Asia/kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -55,36 +55,33 @@ const home = {
     path: "/",
     image: "/images/og/home.jpg",
     label: "Home",
-    title: `${person.name} | Full Stack Developer Portfolio`,
-    description: `Explore my portfolio and resume featuring full stack projects, real-time systems, and 2000+ coding challenges solved.`,
+    title: `${person.name} | Engineer Analyst Intern at Goldman Sachs & Full Stack Developer`,
+    description: `Explore my portfolio and resume featuring full stack projects, real-time systems, and 2200+ coding challenges solved.`,
     keywords: [
         "Dev Trivedi portfolio",
         "Dev Trivedi resume",
-        "Dev Trivedi full stack developer",
+        "Dev Trivedi Goldman Sachs",
+        "Dev Trivedi Engineer Analyst Intern",
+        "Goldman Sachs Engineer Analyst Intern Bengaluru",
         "Next.js developer portfolio",
         "React Node.js portfolio",
     ],
-    headline: (
-        <>
-            I build scalable,
-            <br /> real-time web products from idea to production
-        </>
-    ),
+    headline: "Backend Engineer \u0026 Full Stack Developer",
     featured: {
         display: true,
         title: (
             <>
-                Recent project: <strong className="ml-4">Talkasauras</strong>
+                Recent project: <strong className="ml-4">Trimium</strong>
             </>
         ),
-        href: "/work/talkasaraus-telegram-ai-assistant-bot",
+        href: "/work/trimium-upgraded-url-management-platfrom-and-more",
     },
     subline: (
         <>
-            I build user-focused full-stack applications with React, Next.js, Node.js, and modern AI
-            tooling.
-            <br /> My approach combines clean architecture and practical problem solving — backed by{" "}
-            <strong>2000+ coding challenges solved</strong> on LeetCode and Codeforces.
+            I&apos;m currently an <strong>Engineer Analyst Intern at Goldman Sachs</strong> in
+            Bengaluru — applying my problem-solving skills to financial technology.
+            <br /> I build user-focused full-stack applications with React, Next.js, Node.js, and
+            modern AI tooling.
         </>
     ),
 };
@@ -92,8 +89,14 @@ const home = {
 const about = {
     path: "/about",
     label: "About",
-    title: `About ${person.name} | Full Stack Developer`,
+    title: `About ${person.name} | Engineer Analyst Intern at Goldman Sachs`,
     description: `I am ${person.name}, a ${person.role} specializing in real-time collaborative web apps and scalable backend systems.`,
+    keywords: [
+        "Dev Trivedi about",
+        "Dev Trivedi full stack developer",
+        "Dev Trivedi Goldman Sachs",
+        "Dev Trivedi Dhirubhai Ambani University",
+    ],
     tableOfContent: {
         display: true,
         subItems: true,
@@ -110,56 +113,25 @@ const about = {
         title: "About Me",
         description: (
             <>
-                I am a software developer with expertise in building real-time collaborative
-                platforms and intuitive web applications. My work combines technical innovation with
-                user-focused design to create seamless digital experiences that solve practical
-                problems. With over 2000+ coding challenges solved on LeetCode and Codeforces, I
-                bring strong algorithmic thinking and deep problem-solving skills to every project.
+                Currently an Engineer Analyst Intern at Goldman Sachs in Bengaluru, where I apply
+                strong algorithmic thinking and full-stack engineering to financial technology at
+                scale. I build real-time collaborative platforms and intuitive web applications,
+                combining technical innovation with user-focused design to deliver seamless,
+                practical digital experiences. With 2200+ coding challenges solved on LeetCode and
+                Codeforces, I bring deep problem-solving skills to every project – from hackathons
+                to enterprise systems.
             </>
         ),
     },
     work: {
-        display: false, // set to false to hide this section
+        display: true,
         title: "Work Experience",
         experiences: [
             {
-                company: "FLY",
-                timeframe: "2022 - Present",
-                role: "Senior Design Engineer",
-                achievements: [
-                    <>
-                        Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in
-                        user engagement and 30% faster load times.
-                    </>,
-                    <>
-                        Spearheaded the integration of AI tools into design workflows, enabling
-                        designers to iterate 50% faster.
-                    </>,
-                ],
-                images: [
-                    // optional: leave the array empty if you don't want to display images
-                    {
-                        src: "/images/projects/project-01/cover-01.jpg",
-                        alt: "Once UI Project",
-                        width: 16,
-                        height: 9,
-                    },
-                ],
-            },
-            {
-                company: "Creativ3",
-                timeframe: "2018 - 2022",
-                role: "Lead Designer",
-                achievements: [
-                    <>
-                        Developed a design system that unified the brand across multiple platforms,
-                        improving design consistency by 40%.
-                    </>,
-                    <>
-                        Led a cross-functional team to launch a new product line, contributing to a
-                        15% increase in overall company revenue.
-                    </>,
-                ],
+                company: "Goldman Sachs",
+                timeframe: "Summer 2026",
+                role: "Engineer Analyst Intern",
+                achievements: [],
                 images: [],
             },
         ],
@@ -173,7 +145,7 @@ const about = {
                 description: (
                     <>
                         B.Tech in Information & Communication Technology with
-                        <strong> 8.58/10 GPA</strong>.
+                        <strong> 8.59/10 GPA</strong>.
                     </>
                 ),
             },
@@ -203,25 +175,25 @@ const about = {
                 ),
                 images: [
                     {
-                        src: "/images/myImages/projects/talkasauras/cover-02.png",
+                        src: "/images/projects/trimium/cover-01.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
                     },
                     {
-                        src: "/images/myImages/projects/codewhisper/cover-01.png",
+                        src: "/images/projects/talkasauras/cover-02.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
                     },
                     {
-                        src: "/images/myImages/projects/trimium/cover-01.png",
+                        src: "/images/projects/codewhisper/cover-01.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
                     },
                     {
-                        src: "/images/myImages/projects/linkwith/cover-01.png",
+                        src: "/images/projects/linkwith/cover-01.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
@@ -234,7 +206,7 @@ const about = {
                     <>
                         My LeetCode profile has an <strong>1819 peak rating</strong> and over{" "}
                         <strong>1600 problems</strong> solved, reflecting strong algorithm and data
-                        structure skills. I have solved over <strong>2000+ challenges</strong>{" "}
+                        structure skills. I have solved over <strong>2200+ challenges</strong>{" "}
                         across coding platforms.
                         <ul style={{ marginTop: 10 }}>
                             <li>
@@ -257,19 +229,19 @@ const about = {
                 ),
                 images: [
                     {
-                        src: "/images/myImages/profiles/leetcode.png",
+                        src: "/images/profiles/leetcode.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
                     },
                     {
-                        src: "/images/myImages/profiles/cf1.png",
+                        src: "/images/profiles/cf1.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
                     },
                     {
-                        src: "/images/myImages/profiles/cf2.png",
+                        src: "/images/profiles/cf2.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
@@ -294,6 +266,15 @@ const work = {
     label: "Work",
     title: `Projects – ${person.name}`,
     description: `Explore full-stack projects I built, from real-time collaboration tools to AI-powered applications.`,
+    keywords: [
+        "Dev Trivedi projects",
+        "Dev Trivedi portfolio",
+        "Dev Trivedi full stack projects",
+        "Talkasauras Telegram bot",
+        "CodeWhisper collaborative editor",
+        "LinkWith URL management",
+        "Trimium URL platform",
+    ],
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes
 };
@@ -301,140 +282,16 @@ const work = {
 const resume = {
     path: "/resume",
     label: "Resume",
-    title: `${person.name} Resume - Full Stack Developer`,
-    description: `Download my resume covering full-stack skills, project experience, and 2000+ coding challenges solved.`,
+    title: `${person.name} Resume - Engineer Analyst Intern at Goldman Sachs`,
+    description: `Download my resume covering full-stack skills, Goldman Sachs engineering experience, and 2200+ coding challenges solved.`,
     keywords: [
         "Dev Trivedi resume",
         "Dev Trivedi CV",
+        "Dev Trivedi Goldman Sachs",
         "Dev Trivedi full stack developer",
-        "Dev Trivedi portfolio",
+        "Goldman Sachs Engineer Analyst Intern",
         "TypeScript React Node.js resume",
     ],
 };
 
-const gallery = {
-    path: "/gallery",
-    label: "Gallery",
-    title: `Photo gallery – ${person.name}`,
-    description: `A photo collection of my projects, coding milestones, and personal highlights`,
-    images: [
-        {
-            src: "/images/myImages/profiles/leetcode.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/profiles/cf1.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/profiles/cf2.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/15.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/16.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/17.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/18.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/19.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/20.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-
-        {
-            src: "/images/myImages/gallery/1.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/2.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/3.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/4.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/5.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/6.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/7.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/8.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/9.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/10.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/11.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/12.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/13.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/myImages/gallery/14.png",
-            alt: "image",
-            orientation: "horizontal",
-        },
-    ],
-};
-
-export { person, social, newsletter, home, about, blog, work, resume, gallery };
+export { person, social, newsletter, home, about, blog, work, resume };
