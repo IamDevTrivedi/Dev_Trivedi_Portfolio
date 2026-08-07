@@ -9,7 +9,8 @@
         "preview": "next build && next start -p 3000",
         "lint": "next lint",
         "format": "prettier --write .",
-        "format:check": "prettier --check ."
+        "format:check": "prettier --check .",
+        "prepare": "husky"
     },
     "dependencies": {
         "@floating-ui/react-dom": "^2.1.2",
@@ -42,6 +43,8 @@
         "@types/react-dom": "^18.3.6",
         "eslint": "^9.25.0",
         "eslint-config-next": "15.3.8",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.3.0",
         "postcss-custom-media": "^10.0.8",
         "postcss-flexbugs-fixes": "^5.0.2",
         "prettier": "^3.8.1",
