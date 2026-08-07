@@ -89,7 +89,7 @@ const home = {
 const about = {
     path: "/about",
     label: "About",
-    title: `About ${person.name} | Engineer Analyst Intern at Goldman Sachs`,
+    title: `About ${person.name}`,
     description: `I am ${person.name}, a ${person.role} specializing in real-time collaborative web apps and scalable backend systems.`,
     keywords: [
         "Dev Trivedi about",
