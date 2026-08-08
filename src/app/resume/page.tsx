@@ -6,7 +6,6 @@ import { Meta, Schema } from "@/once-ui/modules";
 import { resumeKeywords } from "./resumeSeoContent";
 
 const resumeFilePath = "/downloads/resume.pdf";
-const resumeTextPath = "/downloads/resume.txt";
 const resumeViewerParams = "#page=1&zoom=page-fit&pagemode=none&navpanes=0";
 
 const externalProfileLinks = social
@@ -87,14 +86,13 @@ export default function ResumePage() {
 
             <Column fillWidth gap="12">
                 <Heading as="h1" variant="display-strong-s" wrap="balance">
-                    Dev Trivedi Resume
+                    Dev Trivedi — Full Stack Developer
                 </Heading>
                 <Text variant="body-default-m" onBackground="neutral-weak" wrap="balance">
-                    I am Dev Trivedi, an Engineer Analyst Intern at Goldman Sachs and a full stack
-                    developer who enjoys turning ideas into reliable, user-focused products. In this
-                    resume, I share my technical skills, project experience, and key milestones that
-                    have shaped my journey across modern web development, backend systems, and
-                    problem solving.
+                    I am Dev Trivedi, a full stack developer and ex-Goldman Sachs Intern who enjoys
+                    turning ideas into reliable, user-focused products. In this resume, I share my
+                    technical skills, project experience, and key milestones that have shaped my
+                    journey across modern web development, backend systems, and problem solving.
                 </Text>
             </Column>
 

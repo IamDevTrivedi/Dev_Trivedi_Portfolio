@@ -8,7 +8,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role: "Engineer Analyst Intern at Goldman Sachs | Full Stack Developer",
+    role: "Full Stack Developer | ex-Goldman Sachs Intern",
     avatar: "/images/avatar.jpg",
     email: "devtrivedi.work@gmail.com",
     location: "Asia/kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -55,13 +55,13 @@ const home = {
     path: "/",
     image: "/images/og/home.jpg",
     label: "Home",
-    title: `${person.name} | Engineer Analyst Intern at Goldman Sachs & Full Stack Developer`,
+    title: `${person.name} | Full Stack Developer & ex-Goldman Sachs Intern`,
     description: `Explore my portfolio and resume featuring full stack projects, real-time systems, and 2200+ coding challenges solved.`,
     keywords: [
         "Dev Trivedi portfolio",
         "Dev Trivedi resume",
         "Dev Trivedi Goldman Sachs",
-        "Dev Trivedi Engineer Analyst Intern",
+        "Dev Trivedi ex-Goldman Sachs Intern",
         "Goldman Sachs Engineer Analyst Intern Bengaluru",
         "Next.js developer portfolio",
         "React Node.js portfolio",
@@ -78,10 +78,10 @@ const home = {
     },
     subline: (
         <>
-            I&apos;m currently an <strong>Engineer Analyst Intern at Goldman Sachs</strong> in
-            Bengaluru — applying my problem-solving skills to financial technology.
-            <br /> I build user-focused full-stack applications with React, Next.js, Node.js, and
-            modern AI tooling.
+            I spent my summer at <strong>Goldman Sachs</strong> as an Engineer Analyst Intern in
+            Bengaluru — turning manual finance workflows into one-click automation.
+            <br /> Now I build user-focused full-stack applications with React, Next.js, Node.js,
+            and modern AI tooling.
         </>
     ),
 };
@@ -90,7 +90,7 @@ const about = {
     path: "/about",
     label: "About",
     title: `About ${person.name}`,
-    description: `I am ${person.name}, a ${person.role} specializing in real-time collaborative web apps and scalable backend systems.`,
+    description: `I am ${person.name}, a full stack developer and ex-Goldman Sachs Intern specializing in real-time collaborative web apps and scalable backend systems.`,
     keywords: [
         "Dev Trivedi about",
         "Dev Trivedi full stack developer",
@@ -113,13 +113,13 @@ const about = {
         title: "About Me",
         description: (
             <>
-                Currently an Engineer Analyst Intern at Goldman Sachs in Bengaluru, where I apply
-                strong algorithmic thinking and full-stack engineering to financial technology at
-                scale. I build real-time collaborative platforms and intuitive web applications,
-                combining technical innovation with user-focused design to deliver seamless,
-                practical digital experiences. With 2200+ coding challenges solved on LeetCode and
-                Codeforces, I bring deep problem-solving skills to every project – from hackathons
-                to enterprise systems.
+                As an Engineer Analyst Intern at Goldman Sachs in Bengaluru, I put strong
+                algorithmic thinking and full-stack engineering to work on financial technology at
+                scale. Today I build real-time collaborative platforms and intuitive web
+                applications, combining technical innovation with user-focused design to deliver
+                seamless, practical digital experiences. With 2200+ coding challenges solved on
+                LeetCode and Codeforces, I bring deep problem-solving skills to every project – from
+                hackathons to enterprise systems.
             </>
         ),
     },
@@ -129,7 +129,7 @@ const about = {
         experiences: [
             {
                 company: "Goldman Sachs",
-                timeframe: "Summer 2026",
+                timeframe: "May 2026 – Jul 2026",
                 role: "Engineer Analyst Intern",
                 achievements: [],
                 images: [],
@@ -282,14 +282,14 @@ const work = {
 const resume = {
     path: "/resume",
     label: "Resume",
-    title: `${person.name} Resume - Engineer Analyst Intern at Goldman Sachs`,
+    title: `${person.name} Resume - Full Stack Developer & ex-Goldman Sachs Intern`,
     description: `Download my resume covering full-stack skills, Goldman Sachs engineering experience, and 2200+ coding challenges solved.`,
     keywords: [
         "Dev Trivedi resume",
         "Dev Trivedi CV",
         "Dev Trivedi Goldman Sachs",
         "Dev Trivedi full stack developer",
-        "Goldman Sachs Engineer Analyst Intern",
+        "Dev Trivedi ex-Goldman Sachs Intern",
         "TypeScript React Node.js resume",
     ],
 };
